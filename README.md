@@ -12,9 +12,9 @@ it's responsive to different screen sizes.
 
 Clone the practice from the [starter].
 
-Once you're in VS Code, you can drag the __index.html__ file into your browser
+Once you're in VS Code, you can drag the **index.html** file into your browser
 to view the webpage, or use the **File Explorer** to open it in your browser.
-The only file you will need to edit for this practice is __main.css__.
+The only file you will need to edit for this practice is **main.css**.
 
 > Remember to save the CSS file and refresh the page in the browser whenever you
 > make changes.
@@ -44,7 +44,6 @@ if the import was successful). The page also includes a CDN link to Font
 Awesome, a font that contains nice icons you can use for the header. To use an
 icon from Font Awesome, you just need to include an `i` element with the classes "fa«indicator»" and "fa-«icon name»". For example, to include the solid "home"
 icon which looks like a house, you would add this HTML to your source code.
-
 
 ```html
 <i class="fas fa-home"></i>
@@ -84,7 +83,6 @@ is for that setting.
 | Padding          | 4 pixels  |
 | Text color       | white     |
 
-
 Now, you'll need to use `display: flex` on the `header-nav__container` to put
 the three sections in the right place with space between them. (The trello logo in the center and
 the buttons to the left and right.)
@@ -95,9 +93,7 @@ different elements spaced apart from one another.
 In the right `.header-nav__group`, the alert button should have a background color of
 "#CF513D".
 
-Once you have that, add a media query "breakpoint" to hide the search input
-field and the "Boards" text on screens with widths less than or equal to 730
-pixels.
+Once you h
 
 ```css
 @media screen and (max-width: 730px) {
@@ -153,7 +149,6 @@ Use flexbox to recreate the tabbed nav bar above the boards, which contains
 four links -- Boards, Members, Settings, Business Class.
 
 ![](https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/flexbox/assets/trello-tabbed-navbar.png)
-
 
 Set the following properties to the indicated values for
 `.tabbed-nav__container`:
@@ -233,7 +228,7 @@ should not grow or shrink. It should have a basis of 220 pixels.
 The `.title` and `a` elements that are descendants of `.boards__sidebar-content`
 should have white text color.
 
-The `.description` elements that are descendants of  `.boards__sidebar-content`
+The `.description` elements that are descendants of `.boards__sidebar-content`
 should have light blue text color. (There is a named color for light blue.)
 
 The `.boards__group` should also be a flexbox container that allows its child
@@ -257,7 +252,6 @@ Set the following properties to the indicated values for the `.boards__board`:
 
 The `.boards__board` should also be a flexbox container with vertical layout. It
 should justify its content to distribute leftover space between the children.
-
 
 For medium- and large-sized screens, you want the `.boards__board` elements to
 layout out with many of them in a row. Create a media query breakpoint for

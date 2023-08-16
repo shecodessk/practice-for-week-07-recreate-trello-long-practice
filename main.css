@@ -1,7 +1,172 @@
 /* Your code here */
+body {
+  font-family: "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+.header-nav__container {
+  background-color: #036aa7;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 730px) {
+  /* Hide the header search input field. */
+  /* Hide the "Boards" text, but leave the boards icon. */
+  #search > input,
+  .boards-label {
+    display: none;
+  }
+}
+.team__container {
+  background-color: #f4f5f7;
+  :padding: ;
+}
+.team_ {
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+.team__info {
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+.team__info > h1 {
+  margin: 0 0 12px;
+  line-height: 28px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.team__info a {
+  color: #172b4d;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.tabbed-nav__container {
+  background-color: #f4f5f7;
+}
+
+.tabbed-nav__group {
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+.tabbed-nav__link {
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: Bold weight;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
+}
+
+@media screen and (max-width: 500px) {
+  .tabbed-nav__group,
+  .boards__group {
+    flex-direction: column;
+  }
+  .boards__board {
+    width: 100%;
+  }
+}
+
+.boards__container {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.boards__sidebar {
+  background-color: #6c547b;
+  border-radius: 3px;
+  margin: 0 32px 32px 0;
+  padding: 0 20px 32px 20px;
+  max-height: 130px;
+  max-width: 180px;
+  width: 20%;
+  flex: 0 0 220px;
+}
+.boards__sidebar-content > .title,
+.boards__sidebar-content > a {
+  color: white;
+}
+.boards__sidebar-content > .description {
+  color: lightblue;
+}
+.boards__group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.boards__board {
+  background-color: hotpink;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 100px;
+  margin: 0 8px 16px;
+  max-width: 250px;
+  padding: 4px 8px;
+  position: relative;
+  color: white;
+  min-width: 25%;
+}
+.boards__board.board-1 {
+  background-size: contain;
+  background-image: url("./board-backgrounds/board-1-background.jpg");
+}
+.boards__board.board-2 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-2-background.jpg");
+}
+.boards__board.board-3 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-3-background.jpg");
+}
+.boards__board.board-4 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-4-background.jpg");
+}
+.boards__board.board-5 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-5-background.jpg");
+}
+.boards__board.board-6 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-6-background.jpg");
+}
+.boards__board.board-7 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-7-background.jpg");
+}
+.boards__board.board-8 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-8-background.jpg");
+}
+.boards__board.board-9 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-9-background.jpg");
+}
+.boards__board.board-10 {
+  background-size: contain;
+  background-image: url("board-backgrounds/board-10-background.jpg");
+}
 
 /* Supplied CSS follows. */
-.header-nav__group{
+.header-nav__group {
   display: flex;
 }
 
@@ -13,12 +178,12 @@
   text-decoration: none;
   align-items: center;
   text-align: center;
-  background-color: hsla(0,0%,100%,.3);
+  background-color: hsla(0, 0%, 100%, 0.3);
   box-shadow: none;
   color: #fff;
   line-height: 32px;
   margin: 0 4px 0 0;
-  transition: .1s ease;
+  transition: 0.1s ease;
   white-space: nowrap;
   padding: 8px;
   height: 20px;
@@ -48,6 +213,9 @@
   top: 5px;
 }
 
- .header-nav__button > i{
+.header-nav__button > i {
   width: 24px;
+}
+.header-nav__button#alerts {
+  background-color: #eb5a46;
 }
